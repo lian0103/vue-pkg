@@ -1,24 +1,31 @@
-# pkg
+## 打包教學
+https://www.youtube.com/watch?v=0WqB6XwBCLc&ab_channel=CodewithBro
 
-## Project setup
+## 打包套件
+https://www.npmjs.com/package/vue-sfc-rollup
+
+## 實作結果
+https://www.npmjs.com/package/v-title-wc
+
+## 使用
 ```
-npm install
+<template>
+  <div class="box">
+    <v-title color="#ccc" fontSize="100px">wwwww</v-title>
+  </div>
+</template>
+
+<script>
+import vTitle from 'v-title-wc';
+
+export default {
+  name: 'Title',
+  components: {
+    vTitle
+  }
+}
+</script>
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 建立步驟
+//待補
