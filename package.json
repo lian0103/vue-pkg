@@ -10,7 +10,8 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "v-title-wc": "^0.0.1",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-pkg-wcs": "file:vue-pkg-wcs"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
