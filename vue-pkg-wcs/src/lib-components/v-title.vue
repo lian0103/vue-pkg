@@ -1,36 +1,39 @@
 <template>
-  <h1 :style="styleObj"><slot></slot></h1>
+  <h1 :style="styleObj"><span>ww</span> <slot></slot></h1>
 </template>
 
 <script>
 export default {
-  name: 'v-title',
+  name: "v-title",
   props: {
     color: {
-      type:String,
-      default:'#f00'
+      type: String,
+      default: "#f00",
     },
-    fontSize:{
-      type:String,
-      default:'4rem'
-    }
+    fontSize: {
+      type: String,
+      default: "4rem",
+    },
   },
-  data(){
-    return{
-      styleObj:{
-        color:this.color,
-        fontSize:this.fontSize
-      }
-    }
-  }
-}
+  data() {
+    return {
+      styleObj: {
+        color: this.color,
+        fontSize: this.fontSize,
+      },
+    };
+  },
+};
 </script>
 
-<style>
-h1{
+<style lang="scss" scoped>
+h1 {
   width: 100%;
   padding: 0.2rem;
   text-align: center;
   margin: 0;
+  span {
+    font-style: italic;
+  }
 }
 </style>
