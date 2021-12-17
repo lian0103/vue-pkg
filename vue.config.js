@@ -2,6 +2,6 @@
 
 module.exports = {
   publicPath: "/vue-pkg/",
-  outputDir: "doc",
+  outputDir: "docs",
   productionSourceMap: false,
 };
