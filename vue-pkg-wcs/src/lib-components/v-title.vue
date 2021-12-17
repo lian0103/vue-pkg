@@ -1,5 +1,5 @@
 <template>
-  <h1 :style="styleObj"><span>ww</span> <slot></slot></h1>
+  <h1 :style="styleObj"><slot></slot></h1>
 </template>
 
 <script>
