@@ -3,6 +3,9 @@
 ## vue-sfc-rollup 使用教學
 https://www.youtube.com/watch?v=0WqB6XwBCLc&ab_channel=CodewithBro
 
+## 處理scss 編譯問題
+https://reurl.cc/9523Vv
+
 ## vue-sfc-rollup
 
 vue-sfc-rollup : https://www.npmjs.com/package/vue-sfc-rollup
@@ -14,36 +17,7 @@ https://www.npmjs.com/package/v-title-wc
 ### 多組件發布
 https://www.npmjs.com/package/vue-pkg-wcs
 
-## 使用範例
-
-```
-<template>
-  <div class="box">
-    <v-title color="#ccc" fontSize="100px"> pkg: v-title-wc</v-title>
-    <br />
-    <v-title-wc> pkg: v-title-wcs </v-title-wc>
-    <v-card>Hello~ Card</v-card>
-    <v-card>Hello~ Card</v-card>
-  </div>
-</template>
-
-<script>
-import vTitle from "v-title-wc";
-import { vTitle as vTitleWc, vCard } from "vue-pkg-wcs";
-
-export default {
-  name: "App",
-  components: {
-    vTitle,
-    vCard,
-    vTitleWc,
-  },
-};
-</script>
-```
-
 ## 建立步驟
-
 ### 在已建立的 vue 專案下指令
 ```
 // 第一次啟用時執行

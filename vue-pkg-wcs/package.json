@@ -1,6 +1,6 @@
 {
   "name": "vue-pkg-wcs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "vue package web components",
   "main": "dist/vue-pkg-wcs.ssr.js",
   "browser": "dist/vue-pkg-wcs.esm.js",
