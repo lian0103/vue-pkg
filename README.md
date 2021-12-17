@@ -72,7 +72,7 @@ npm adduser
 
 ```
 
-2.更改package.json版號
+2.更改package.json版號    
 ex 1.0.1 -> 1.0.2
 
 3.打包模組&發布
