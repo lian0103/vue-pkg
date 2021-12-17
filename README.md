@@ -1,4 +1,4 @@
-# do publish vue component as an npm package 
+# publish vue component as an npm package 
 
 ## vue-sfc-rollup 使用教學
 https://www.youtube.com/watch?v=0WqB6XwBCLc&ab_channel=CodewithBro
