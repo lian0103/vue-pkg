@@ -45,7 +45,6 @@ export default {
 ## 建立步驟
 
 ### 在已建立的 vue 專案下指令
-
 ```
 // 第一次啟用時執行
 sfc-init
@@ -56,23 +55,20 @@ sfc-init --version=${vue version} --mode=library --name=${lib name} --lang=js
 ```
 
 ### 已建立好的 pkg
-
-pkg 結構
+pkg 結構      
 ./v-tilte -> 單一 vue 組件發布模式
 ./vue-pkg-wcs library  -> 多個 vue 組件發布模式
 
 ### 發布流程
-
 1.到指定的pkg資料夾
 ```
 cd ${pkg資料夾}
 
 //新pkg發布到npm前的需要先登入
 npm adduser
-
 ```
 
-2.更改package.json版號    
+2.更改package.json版號     
 ex 1.0.1 -> 1.0.2
 
 3.打包模組&發布
