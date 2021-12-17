@@ -56,7 +56,7 @@ sfc-init --version=${vue version} --mode=library --name=${lib name} --lang=js
 
 ### 已建立好的 pkg
 pkg 結構      
-./v-tilte -> 單一 vue 組件發布模式
+./v-tilte -> 單一 vue 組件發布模式       
 ./vue-pkg-wcs library  -> 多個 vue 組件發布模式
 
 ### 發布流程
