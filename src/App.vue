@@ -19,6 +19,10 @@
       <template v-if="desData[currentSelected].name == 'v-card'">
         <v-card>Card 1</v-card>
       </template>
+      <template v-if="desData[currentSelected].name == 'v-check-list'">
+        <v-check-list mode="CHECK" /> 
+      </template>
+
       <markdown-it-vue-light
         class="md-body"
         :content="desData[currentSelected].props"
@@ -31,8 +35,7 @@
 <script>
 import { desData } from "./desData";
 import MarkdownItVueLight from "markdown-it-vue/dist/markdown-it-vue-light.umd.min.js";
-import { vTitle, vCard } from "vue-pkg-wcs";
-// import { vTitle, vCard } from "../vue-pkg-wcs/dist/vue-pkg-wcs.esm";
+import { vTitle, vCard, vCheckList } from "vue-pkg-wcs";
 
 console.log(desData);
 
@@ -42,6 +45,7 @@ export default {
     MarkdownItVueLight,
     vTitle,
     vCard,
+    vCheckList,
   },
   data() {
     return {

@@ -1,8 +1,16 @@
 <script>
 import Vue from "vue";
+import VCheckList from "../src/lib-components/v-check-list.vue";
 
 export default Vue.extend({
-  name: "ServeDev",
+    name: "ServeDev",
+    components: { VCheckList },
+    data(){
+      return {
+        title:"todo",
+        list:['list~~1','list~~2','list~~1','list~~2','list~~1','list~~2']
+      }
+    }
 });
 </script>
 
@@ -10,10 +18,9 @@ export default Vue.extend({
   <div id="app">
     <v-title> I am in Slot!!😄</v-title>
     <v-card>
-      <div>I am in card!!</div>
-      <div>I am in card!!</div>
-      <div>I am in card!!</div></v-card
+    <v-check-list :list="list" :list-title="title" mode="CHECK" /></v-card
     >
+
   </div>
 </template>
 

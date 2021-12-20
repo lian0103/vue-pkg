@@ -37,6 +37,31 @@ export const desData = [
         },
     `,
   },
+  {
+    name: "v-check-list",
+    props: `
+        <v-check-list :list="list" :list-title="title" mode="CHECK" />
+
+        props: {
+            listTitle: {
+              type: String,
+              default: "list title",
+            },
+            list: {
+              type: Array,
+              default: ["First", "Second"],
+            },
+            mode: {
+              type: String,
+              default: "NONE",
+            },
+            clickCallback: {
+              type: Function,
+              default: () => {},
+            },
+        },
+    `,
+  },
 ];
 
 export default {};
