@@ -1,6 +1,5 @@
 <script>
 import Vue from "vue";
-//components are registered globally
 
 export default Vue.extend({
   name: "ServeDev",
@@ -17,3 +16,7 @@ export default Vue.extend({
     >
   </div>
 </template>
+
+<style lang="scss">
+@import url("https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.9/tailwind.min.css");
+</style>

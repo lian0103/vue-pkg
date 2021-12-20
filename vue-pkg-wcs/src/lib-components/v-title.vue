@@ -1,5 +1,7 @@
 <template>
-  <h1 :style="styleObj"><slot></slot></h1>
+  <h1 :style="styleObj">
+    <slot></slot>
+  </h1>
 </template>
 
 <script>

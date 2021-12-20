@@ -18,7 +18,6 @@
       </template>
       <template v-if="desData[currentSelected].name == 'v-card'">
         <v-card>Card 1</v-card>
-        <v-card>Card 2</v-card>
       </template>
       <markdown-it-vue-light
         class="md-body"
@@ -33,6 +32,7 @@
 import { desData } from "./desData";
 import MarkdownItVueLight from "markdown-it-vue/dist/markdown-it-vue-light.umd.min.js";
 import { vTitle, vCard } from "vue-pkg-wcs";
+// import { vTitle, vCard } from "../vue-pkg-wcs/dist/vue-pkg-wcs.esm";
 
 console.log(desData);
 
@@ -69,6 +69,8 @@ export default {
 </script>
 
 <style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.9/tailwind.min.css");
+
 * {
   margin: 0;
   padding: 0;

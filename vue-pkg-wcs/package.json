@@ -2,25 +2,25 @@
   "name": "vue-pkg-wcs",
   "version": "1.0.4",
   "description": "vue package web components",
+  "scripts": {
+    "serve": "vue-cli-service serve dev/serve.js",
+    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
+    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
+    "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
+    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
+    "prebuild": "rimraf ./dist"
+  },
   "main": "dist/vue-pkg-wcs.ssr.js",
-  "browser": "dist/vue-pkg-wcs.esm.js",
   "module": "dist/vue-pkg-wcs.esm.js",
+  "browser": "dist/vue-pkg-wcs.esm.js",
   "unpkg": "dist/vue-pkg-wcs.min.js",
   "files": [
     "dist/*",
     "src/**/*.vue"
   ],
-  "sideEffects": false,
-  "scripts": {
-    "serve": "vue-cli-service serve dev/serve.js",
-    "prebuild": "rimraf ./dist",
-    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
-    "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
-    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
-    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
-  },
   "dependencies": {
-    "autoprefixer": "^10.4.0",
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "autoprefixer": "^9.0.0",
     "postcss": "^8.4.5",
     "rollup-plugin-scss": "^3.0.0"
   },
@@ -43,7 +43,9 @@
     "rollup-plugin-vue": "^5.1.9",
     "sass": "^1.45.0",
     "sass-loader": "^10.1.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
     "vue": "^2.6.14",
+    "vue-cli-plugin-tailwind": "~2.2.18",
     "vue-template-compiler": "^2.6.14"
   },
   "peerDependencies": {
@@ -51,5 +53,6 @@
   },
   "engines": {
     "node": ">=12"
-  }
+  },
+  "sideEffects": false
 }
