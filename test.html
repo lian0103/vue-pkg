@@ -12,13 +12,17 @@
 </head>
 <body>
     <div id="app">
-        <v-title>
-            組件測試
+        <v-title color="#444">
+            組件測試發布unpkg.com
         </v-title>
         <v-card>
             https://unpkg.com/vue-pkg-wcs@1.0.5/dist/
         </v-card>
-        <v-check-list  mode="CHECK" />
+
+        <v-card>
+            <v-check-list  mode="CHECK" />
+        </v-card>
+
     </div>
     <script>
         const {vTitle,vCard,vCheckList} = VuePkgWcs;
