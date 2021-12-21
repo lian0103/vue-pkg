@@ -52,9 +52,22 @@ npm run prebuild
 
 npm run build
 
-npm version patch/major
+npm version patch（向后兼容的 bug fix）
+npm version minor （新需求且向后兼容）
+npm version major（不兼容）
+npm version prerelease --preid=alpha(测试版本)
 
 npm publish
 ```
 ## unpkg測試
 參照test.html
+
+## npm 發布測試版
+```
+npm version prerelease --preid=${測試版}
+
+npm publish --tag '測試版tag‘
+
+-> 測試完成後回到正常發布流程
+
+```
