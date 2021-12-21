@@ -44,7 +44,11 @@
 </template>
 
 <script>
-import { v4 as uuidv4 } from "uuid";
+// import { v4 as uuidv4 } from "uuid";
+const uuidv4 = (length=16) => {
+  return parseInt(Math.ceil(Math.random() * Date.now()).toPrecision(length).toString().replace(".", ""))
+}
+
 export default {
   name: "v-check-list",
   data() {
