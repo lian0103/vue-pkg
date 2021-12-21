@@ -52,5 +52,9 @@ npm run prebuild
 
 npm run build
 
+npm version patch/major
+
 npm publish
 ```
+## unpkg測試
+參照test.html
