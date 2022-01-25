@@ -4,11 +4,11 @@
 demo: https://lian0103.github.io/vue-pkg/
 
 ### 配置專案
-1.vue-sfc-rollup 
+1.vue-sfc-rollup    
 使用教學:https://www.youtube.com/watch?v=0WqB6XwBCLc&ab_channel=CodewithBro
 vue-sfc-rollup doc:https://www.npmjs.com/package/vue-sfc-rollup
 
-2.處理scss 編譯問題
+2.處理scss 編譯問題    
 https://reurl.cc/9523Vv
 
 
@@ -24,7 +24,7 @@ sfc-init --version=${vue version} --mode=library --name=${lib name} --lang=js
 ```
 
 ### 發布流程
-1.到指定的pkg資料夾
+1.到指定的pkg資料夾   
 ```
 cd ${pkg資料夾}
 
@@ -32,7 +32,7 @@ cd ${pkg資料夾}
 npm add user
 ```
 
-2.更改package.json版號     
+2.更改package.json版號      
 ex 1.0.1 -> 1.0.2
 
 3.打包模組&發布
@@ -55,7 +55,7 @@ npm publish
 a. unpkg     
 參照test.html
 
-b. npm 發布測試版
+b. npm 發布測試版     
 ```
 npm version prerelease --preid=${測試版}
 
