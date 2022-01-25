@@ -2,6 +2,7 @@
 
 ### 實作結果
 demo: https://lian0103.github.io/vue-pkg/
+npm: https://www.npmjs.com/package/vue-pkg-wcs
 
 ### 配置專案
 1.vue-sfc-rollup    
