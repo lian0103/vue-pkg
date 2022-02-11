@@ -62,6 +62,29 @@ export const desData = [
         },
     `,
   },
+  {
+    name: "v-scroll",
+    props: `
+        <vScrollPage title="Hello vScrollPage" :slides="{total:6}" />
+
+        props: {
+          title: {
+            type: String,
+            default: "Scroll & Bg Animation",
+          },
+          aniDuration: {
+            type: Number,
+            default: 10,
+          },
+          slides: {
+            type: Object,
+            default: {
+              total: 5,
+            },
+          },
+        },
+    `,
+  },
 ];
 
 export default {};

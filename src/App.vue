@@ -20,7 +20,13 @@
         <v-card>Card 1</v-card>
       </template>
       <template v-if="desData[currentSelected].name == 'v-check-list'">
-        <v-check-list mode="CHECK" /> 
+        <v-check-list mode="CHECK" />
+      </template>
+
+      <template v-if="desData[currentSelected].name == 'v-scroll'">
+       <div class="childPage">
+          <vScrollPage title="Hello vScrollVue" :slides="{ total: 6 }" />
+       </div>
       </template>
 
       <markdown-it-vue-light
@@ -35,7 +41,7 @@
 <script>
 import { desData } from "./desData";
 import MarkdownItVueLight from "markdown-it-vue/dist/markdown-it-vue-light.umd.min.js";
-import { vTitle, vCard, vCheckList } from "vue-pkg-wcs";
+import { vTitle, vCard, vCheckList, vScrollPage } from "vue-pkg-wcs";
 
 console.log(desData);
 
@@ -46,6 +52,7 @@ export default {
     vTitle,
     vCard,
     vCheckList,
+    vScrollPage,
   },
   data() {
     return {
@@ -101,8 +108,10 @@ export default {
   width: 75%;
   margin: auto;
   padding: 20px;
-  height: calc(100vh - 40px);
+  height: auto;
   overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .md-body {
@@ -133,5 +142,9 @@ export default {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #a0aec0;
+}
+
+.childPage{
+  width: 100%;
 }
 </style>

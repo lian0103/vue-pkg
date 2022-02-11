@@ -1,10 +1,11 @@
 <script>
 import Vue from "vue";
-import VCheckList from "../src/lib-components/v-check-list.vue";
+// import VCheckList from "../src/lib-components/v-check-list.vue";
+import vScrollVue from "../src/lib-components/v-scroll.vue";
 
 export default Vue.extend({
     name: "ServeDev",
-    components: { VCheckList },
+    components: { vScrollVue  },
     data(){
       return {
         title:"todo",
@@ -16,14 +17,15 @@ export default Vue.extend({
 
 <template>
   <div id="app">
-    <v-title> I am in Slot!!😄</v-title>
-    <v-card>
-    <v-check-list :list="list" :list-title="title" mode="CHECK" /></v-card
-    >
-
+    <vScrollVue title="Hello vScrollVue" :slides="{total:6}" />
   </div>
 </template>
 
 <style lang="scss">
 @import url("https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.9/tailwind.min.css");
+
+#app{
+  height: 140vh;
+  overflow-x: hidden;
+}
 </style>
